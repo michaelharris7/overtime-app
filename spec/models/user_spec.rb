@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
   before do
-    @user = FactoryGirl.create(:user, last_name: "Snow")
+    @user = FactoryBot.create(:user, last_name: "Snow")
   end
 
   describe "creation" do
