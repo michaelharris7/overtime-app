@@ -16,3 +16,8 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+
+var http = require("http");
+setInterval(function() {
+    http.get("https://mh-devcamp-overtime.herokuapp.com/");
+}, 300000); // every 5 minutes (300000)
